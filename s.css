@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(134, 234, 234);
+    box-shadow: 5px black;
+    color: black;
+}
+.menu { 
+    display: flex;
+    gap: 24px;
+}
+
+.toggle {
+    display: none;
+    font-size: 16px;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px)  {
+    .menu{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .toggle{
+        display: block;
+    }    
+}
